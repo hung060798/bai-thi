@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function demKiTu(arr1){
+    let arr= ['a','o','u','i','e'];
+    let count=0;
+    for(let i=0;i<arr.length;i++){
+      for (let j=0;j<arr1.length;j++){
+        if(arr[i]==arr1[j]){
+          count++
+        }
+      }
+    }
+    if (count==0) return false;
+    else return "so ki tu nguyen am la: " + count
+  }
+  let chuoi = prompt("nhap chuoi")
+  let mang = chuoi.split('')
+  document.write(demKiTu(mang))
+</script>
+</body>
+</html>

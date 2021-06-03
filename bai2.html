@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert('mang so nguyen tu 0 den 8')
+    let arrr= [0,1,2,3,4,5,6,7,8];
+    function traViTri(arr, giaTri){
+        let viTri;
+        for(let i=0;i<arr.length; i++){
+            if(arr[i]==giaTri){
+                viTri =i;
+                break;
+             }else viTri="so khong co trong mang"
+        }
+        return "vi tri thu: " + viTri;
+    }
+    alert(traViTri(arrr,prompt('nhap so ban can lay vi tri')))
+</script>
+</body>
+</html>
